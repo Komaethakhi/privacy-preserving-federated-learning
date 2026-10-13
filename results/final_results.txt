@@ -1,0 +1,22 @@
+================================================================================
+ FEDERATED LEARNING FOR PRIVACY-PRESERVING DISEASE PREDICTION IN SMART HOSPITALS
+ FINAL EXPERIMENT RESULTS REPORT — REVIEW 2
+================================================================================
+
+Timestamp: 2026-10-01 11:23:10
+Total Cohort: 5000 Patient Records across 5 Hospitals
+Data Distribution: NON_IID
+FL Communication Rounds: 10, Local Epochs: 3, Batch Size: 32, LR: 0.001
+Privacy Mechanism: L2 Clip Norm=1.0, Noise Multiplier=0.1
+
+COMPARATIVE MODEL PERFORMANCE:
+--------------------------------------------------------------------------------
+• Local-Only                     | Acc: 87.41% | F1: 0.8548 | ROC-AUC: 0.9346 | Time: 5.59s
+• Centralized Baseline           | Acc: 79.00% | F1: 0.7737 | ROC-AUC: 0.8804 | Time: 5.23s
+• Federated (FedAvg)             | Acc: 77.32% | F1: 0.7577 | ROC-AUC: 0.8559 | Time: 7.86s
+• Federated + Privacy            | Acc: 75.32% | F1: 0.7461 | ROC-AUC: 0.8453 | Time: 7.39s
+--------------------------------------------------------------------------------
+
+RESEARCH INTEGRITY & DATA PRIVACY DIRECTIVE:
+Raw patient records remained strictly inside client hospital boundaries throughout training.
+Central server received model weight updates only. No individual patient data was transmitted.

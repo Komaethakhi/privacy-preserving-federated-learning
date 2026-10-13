@@ -1,0 +1,5 @@
+Model Paradigm,Accuracy,Precision,Recall,F1-Score,ROC-AUC,Training Time (s),Communication Rounds
+Local-Only,0.8741,0.8509,0.8588,0.8548,0.9346,5.59,0
+Centralized Baseline,0.79,0.7223,0.8329,0.7737,0.8804,5.23,0
+Federated (FedAvg),0.7732,0.703,0.8218,0.7577,0.8559,7.86,10
+Federated + Privacy,0.7532,0.671,0.8403,0.7461,0.8453,7.39,10

@@ -1,0 +1,6 @@
+hospital_name,patient_count,positive_cases,negative_cases,disease_prevalence_pct,avg_age,avg_bmi,avg_blood_pressure_sys,avg_glucose
+Hospital A,1760,126,1634,7.16,43.92,26.4,118.17,102.84
+Hospital B,840,288,552,34.29,48.66,27.27,120.98,107.81
+Hospital C,319,109,210,34.17,49.89,27.24,121.25,107.13
+Hospital D,369,140,229,37.94,51.9,27.46,121.76,109.95
+Hospital E,1712,1492,220,87.15,59.49,28.62,126.27,118.66

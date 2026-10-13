@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.stre​amlit/
+venv/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Temporary files
+scratch/
+*.log
+
+# Private or large local artifacts
+# Keep only if reproducible or intentionally shared
