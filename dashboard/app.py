@@ -973,11 +973,21 @@ def load_hospital_distribution_csv():
         return pd.read_csv(path)
     return None
 
+
 @st.cache_data
 def load_config():
-    config_path = "config/config.yaml"
+    from pathlib import Path
+    import sys
+
+    project_root = Path(__file__).resolve().parent.parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+
+    config_path = project_root / "config" / "config.yaml"
+
     from config.config_loader import load_config as fallback_config
-    return fallback_config(config_path)
+    return fallback_config(str(config_path))
+
 
 def load_trained_private_model():
     pt_path = "models/federated_private_model.pt"
